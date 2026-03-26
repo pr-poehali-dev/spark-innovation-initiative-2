@@ -116,7 +116,8 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
                 transition={{ duration: 0.4, delay: 0.3 + i * 0.06 }}
               >
                 <div className="text-2xl font-bold text-[#FF4D00] mb-1">{card.abbrev}</div>
-                <div className="text-white font-medium text-sm mb-2">{card.full}</div>
+                <div className="text-white font-medium text-sm">{card.full}</div>
+                {card.ru && <div className="text-[#FF4D00]/70 text-xs mt-0.5 mb-2">{card.ru}</div>}
                 <div className="text-neutral-500 text-xs italic">"{card.example}"</div>
               </motion.div>
             ))}

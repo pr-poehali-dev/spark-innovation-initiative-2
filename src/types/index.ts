@@ -3,6 +3,7 @@ import type { ReactNode } from "react"
 export interface AbbrevCard {
   abbrev: string
   full: string
+  ru: string
   example: string
 }
 
