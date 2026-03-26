@@ -14,6 +14,9 @@ export interface Section {
   showButton?: boolean
   buttonText?: string
   cards?: AbbrevCard[]
+  image?: string
+  imageAlt?: string
+  facts?: string[]
 }
 
 export interface SectionProps extends Section {

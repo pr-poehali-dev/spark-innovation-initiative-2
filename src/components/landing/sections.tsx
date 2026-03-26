@@ -3,31 +3,90 @@ import { Badge } from "@/components/ui/badge"
 export const sections = [
   {
     id: 'hero',
-    subtitle: <Badge variant="outline" className="text-white border-white">Английский язык</Badge>,
+    subtitle: <Badge variant="outline" className="text-white border-white">Проектная работа · Английский язык</Badge>,
     title: "Аббревиатуры: язык современного мира.",
+    content: 'Как несколько букв заменяют целые фразы — и почему это важно знать каждому.',
     showButton: true,
-    buttonText: 'Узнать больше'
+    buttonText: 'Начать изучение',
   },
   {
-    id: 'about',
+    id: 'what',
     title: 'Что такое аббревиатура?',
-    content: 'Аббревиатура — это сокращённое слово или словосочетание, образованное из начальных букв. Например: NASA, FBI, CEO, ASAP. Они окружают нас везде — в технологиях, бизнесе и повседневной речи.'
+    content: 'Аббревиатура (от лат. abbrevio — сокращаю) — слово, образованное из начальных букв или слогов словосочетания. Они экономят время, упрощают общение и стали неотъемлемой частью современного языка.',
+    image: 'https://cdn.poehali.dev/projects/8b6510b5-8147-44a2-8cf6-0b1fbf07bf13/files/a36e53bb-93ae-4f06-8e8d-381537c0a14a.jpg',
+    imageAlt: 'Аббревиатуры в пространстве',
+    facts: [
+      'NASA расшифровывается в 4 слова',
+      'ASAP используют с XIX века',
+      'В английском >10 000 аббревиатур',
+    ],
   },
   {
-    id: 'features',
-    title: 'Где мы их встречаем',
-    content: 'В технологиях: AI, IT, API, URL. В бизнесе: CEO, CFO, B2B, ROI. В общении: ASAP, FYI, LOL, DM. Знание аббревиатур — ключ к пониманию современного английского.'
+    id: 'tech',
+    title: 'Технологии и наука',
+    content: 'IT-сфера буквально говорит аббревиатурами. Без них невозможно читать документацию, новости или вести переписку с коллегами.',
+    cards: [
+      { abbrev: 'AI', full: 'Artificial Intelligence', example: 'AI is changing the world.' },
+      { abbrev: 'API', full: 'Application Programming Interface', example: 'The API returns JSON data.' },
+      { abbrev: 'URL', full: 'Uniform Resource Locator', example: 'Enter the URL in your browser.' },
+      { abbrev: 'NASA', full: 'National Aeronautics and Space Administration', example: 'NASA launched a new rocket.' },
+      { abbrev: 'HTML', full: 'HyperText Markup Language', example: 'HTML is used to build websites.' },
+      { abbrev: 'GPS', full: 'Global Positioning System', example: 'Use GPS to find the route.' },
+      { abbrev: 'USB', full: 'Universal Serial Bus', example: 'Connect via USB cable.' },
+      { abbrev: 'VPN', full: 'Virtual Private Network', example: 'Enable your VPN for safety.' },
+    ],
   },
   {
-    id: 'testimonials',
-    title: 'Почему это важно?',
-    content: 'Английские аббревиатуры проникли во все языки мира. Без их понимания сложно читать новости, работать в международной компании или просто общаться в интернете.'
+    id: 'business',
+    title: 'Бизнес и финансы',
+    content: 'Деловой английский невозможен без аббревиатур. Они встречаются в каждом письме, презентации и переговорах.',
+    image: 'https://cdn.poehali.dev/projects/8b6510b5-8147-44a2-8cf6-0b1fbf07bf13/files/5fdcfcb3-beee-42b1-8986-4e6d16daef89.jpg',
+    imageAlt: 'Бизнес аббревиатуры',
+    cards: [
+      { abbrev: 'CEO', full: 'Chief Executive Officer', example: 'The CEO signed the deal.' },
+      { abbrev: 'CFO', full: 'Chief Financial Officer', example: 'Our CFO reviewed the budget.' },
+      { abbrev: 'ROI', full: 'Return on Investment', example: 'The ROI was 200% this year.' },
+      { abbrev: 'B2B', full: 'Business to Business', example: 'It\'s a B2B software company.' },
+    ],
   },
   {
-    id: 'join',
+    id: 'chat',
+    title: 'Общение и интернет',
+    content: 'Социальные сети, мессенджеры, форумы — везде своя система сокращений. Не зная их, легко потеряться в переписке с носителями языка.',
+    image: 'https://cdn.poehali.dev/projects/8b6510b5-8147-44a2-8cf6-0b1fbf07bf13/files/0fa8acfb-0a91-4905-9f07-23dc931e2ab2.jpg',
+    imageAlt: 'Интернет общение',
+    cards: [
+      { abbrev: 'ASAP', full: 'As Soon As Possible', example: 'Reply ASAP, please!' },
+      { abbrev: 'FYI', full: 'For Your Information', example: 'FYI, the meeting is at 3pm.' },
+      { abbrev: 'LOL', full: 'Laugh Out Loud', example: 'That meme was LOL 😂' },
+      { abbrev: 'DM', full: 'Direct Message', example: 'Send me a DM later.' },
+    ],
+  },
+  {
+    id: 'gov',
+    title: 'Государство и организации',
+    content: 'Международные организации, правительства и силовые структуры — их названия почти всегда звучат как аббревиатуры.',
+    cards: [
+      { abbrev: 'UN', full: 'United Nations', example: 'The UN held an emergency meeting.' },
+      { abbrev: 'FBI', full: 'Federal Bureau of Investigation', example: 'The FBI opened a case.' },
+      { abbrev: 'WHO', full: 'World Health Organization', example: 'WHO warned about the virus.' },
+      { abbrev: 'NATO', full: 'North Atlantic Treaty Organization', example: 'NATO expanded its borders.' },
+      { abbrev: 'CIA', full: 'Central Intelligence Agency', example: 'The CIA released documents.' },
+      { abbrev: 'EU', full: 'European Union', example: 'The EU passed new laws.' },
+      { abbrev: 'IMF', full: 'International Monetary Fund', example: 'IMF granted the loan.' },
+      { abbrev: 'GDP', full: 'Gross Domestic Product', example: 'GDP grew by 3% this year.' },
+    ],
+  },
+  {
+    id: 'conclusion',
     title: 'Учи. Понимай. Говори.',
-    content: 'Освоив систему английских аббревиатур, ты откроешь новый уровень понимания языка — от деловой переписки до популярной культуры.',
+    content: 'Аббревиатуры — это не просто сокращения. Это отражение культуры, профессии и эпохи. Освоив их, ты говоришь на настоящем современном английском.',
+    facts: [
+      'Аббревиатуры составляют до 15% деловых текстов',
+      'Новые сокращения появляются каждый день',
+      'Знание аббревиатур = понимание контекста',
+    ],
     showButton: true,
-    buttonText: 'Начать изучение'
+    buttonText: 'Спасибо за внимание!',
   },
 ]
