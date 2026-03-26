@@ -22,4 +22,6 @@ export interface Section {
 
 export interface SectionProps extends Section {
   isActive: boolean
+  sectionIndex: number
+  onNavigate: (index: number) => void
 }

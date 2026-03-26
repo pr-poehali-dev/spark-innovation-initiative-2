@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import type { SectionProps } from "@/types"
 
-export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText, cards, image, imageAlt, facts }: SectionProps) {
+export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText, cards, image, imageAlt, facts, sectionIndex, onNavigate }: SectionProps) {
   const hasImage = !!image
   const hasCards = cards && cards.length > 0
 
@@ -70,6 +70,7 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
                 variant="outline"
                 size="lg"
                 className="text-[#FF4D00] bg-transparent border-[#FF4D00] hover:bg-[#FF4D00] hover:text-black transition-colors"
+                onClick={() => onNavigate(sectionIndex === 0 ? 1 : 0)}
               >
                 {buttonText}
               </Button>
